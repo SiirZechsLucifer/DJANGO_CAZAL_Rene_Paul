@@ -1,0 +1,12 @@
+installer django: pip install django
+créer le projet django: django-admin startproject "nom du projet"
+se déplacer au niveau du projet: cd "nom du projet"
+démarrer le serveur django: python manage.py runserver
+créer une application: python manage.py startapp "nom de l'application"
+ajouter dans setting l'application: 
+INSTALLED_APPS = [
+	'bibliotheque.apps.BibliothequeConfig',
+			...
+			...
+			...
+

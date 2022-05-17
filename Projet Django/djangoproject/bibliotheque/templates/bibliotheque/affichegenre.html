@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+        <meta charset="UTF-8">
+        <title>ajout d'un manga</title>
+</head>
+<body>
+    <h1>{{genre.nom}}</h1>
+    <a href="/bibliotheque/ajoutgenre/{{genre.id}}/"> ajouter un livre </a>
+
+<ol>
+    Liste des manga de du genre
+    {% for l in liste %}
+        <li> {{l.nom}} </li>
+    {% endfor %}
+</ol>
+
+</body>
+</html>

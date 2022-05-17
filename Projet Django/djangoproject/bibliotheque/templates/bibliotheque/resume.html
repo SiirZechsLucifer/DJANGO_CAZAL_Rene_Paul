@@ -1,0 +1,18 @@
+{% extends "bibliotheque/index.html" %}
+{% block content %}
+<div class= "nav_barre">
+
+        <nav class="lien1"><a href="/bibliotheque/ajout/">Ajout</a></nav>
+
+        <nav class="lien1"><a href="/bibilotheque/ajout2"></a></nav>
+    </div>
+
+
+
+
+{% for l in liste %}
+
+{{l.titre}}<nav class="lien1"><a href="/bibliotheque/delete">delete</a></nav>
+
+
+{% endfor %}

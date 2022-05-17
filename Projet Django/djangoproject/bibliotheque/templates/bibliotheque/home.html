@@ -1,0 +1,25 @@
+
+
+{% extends "bibliotheque/index.html" %}
+
+{% block content %}
+
+
+
+
+{% for y in liste %}
+
+{{y.nom}}
+
+ {{y}}
+
+    <button name="button"><a href="/bibliotheque/affichegenre/{{y.id}}"> afficher les détails </a></button>
+    <button name="button"><a href="/bibliotheque/deletegenre/{{y.id}}"> effacer </a></button>
+    <button name="button"><a href="/bibliotheque/updategenre/{{y.id}}"> update </a></button>
+
+
+{% endfor %}
+
+<h1>Manga Blitz</h1>
+
+{% endblock %}
